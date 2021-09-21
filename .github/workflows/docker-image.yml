@@ -22,7 +22,7 @@ jobs:
     needs:
       build
     steps:
-    - uses: actions/checkoiut@v2
+    - uses: actions/checkout@v2
     - name: Publish the tagged Docker image
       run: docker push vsysoev/aflplusplus-cmake:$(date +%s)
     - name: Publish the latest Docker image 
