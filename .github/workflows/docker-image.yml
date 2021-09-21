@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag vsysoev/aflplusplus-cmake:latest
     - name: Publish the latest Docker image 
-      run: docker push vsysoev/aflplusplus-cmake:latest
+      run: docker push ghcr.io/vsysoev/aflplusplus-cmake:latest
