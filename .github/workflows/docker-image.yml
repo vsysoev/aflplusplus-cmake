@@ -15,8 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag vsysoev/aflplusplus-cmake:$(date +%s) --tag vsysoev/aflplusplus-cmake:latest
-    - name: Publish the tagged Docker image
-      run: docker push vsysoev/aflplusplus-cmake:$(date +%s)
+      run: docker build . --file Dockerfile --tag vsysoev/aflplusplus-cmake:latest
     - name: Publish the latest Docker image 
       run: docker push vsysoev/aflplusplus-cmake:latest
